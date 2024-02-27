@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Program Install</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+  }
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+  }
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  .program-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .program {
+    width: 200px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  .program:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Program Install</h1>
+</header>
+<div class="container">
+  <div class="program-list">
+    <div class="program">
+      <h2>Program 1</h2>
+      <p>Description of Program 1.</p>
+      <button>Install</button>
+    </div>
+    <div class="program">
+      <h2>Program 2</h2>
+      <p>Description of Program 2.</p>
+      <button>Install</button>
+    </div>
+    <div class="program">
+      <h2>Program 3</h2>
+      <p>Description of Program 3.</p>
+      <button>Install</button>
+    </div>
+    <!-- Add more programs as needed -->
+  </div>
+</div>
+<script>
+  const buttons = document.querySelectorAll('.program button');
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      alert('Installing program...');
+      // Add installation logic here
+    });
+  });
+</script>
+</body>
+</html>
